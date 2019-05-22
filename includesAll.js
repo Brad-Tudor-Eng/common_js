@@ -1,4 +1,4 @@
-const includesAll = (master, sample) => {
+export const includesAll = (master, sample) => {
     //check to see if every element of sample is in master
     // O(N + K)
     const hash = {}
@@ -14,8 +14,5 @@ const includesAll = (master, sample) => {
     return true
 }
 
-const deepCopy = (arry) => {
-    //returns a true deep copy without JSON.Parse / JSON.Stringify hack  
-    return Array.from(arry, (el)=> Array.isArray(el) ? deepCopy(el) : el)
-}
+
 
